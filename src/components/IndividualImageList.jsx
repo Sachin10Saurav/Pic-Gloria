@@ -36,7 +36,7 @@ const IndividualImageList = ({ dataList }) => {
   return (
     <>
       <div className={model ? "model open" : "model"}>
-        <img src={tempImgSrc} />
+        <img src={tempImgSrc} alt="pic" />
         <span>
           <CloseIcon
             className="close-icon-btn"
@@ -68,7 +68,7 @@ const IndividualImageList = ({ dataList }) => {
                   on
                   onClick={() => getImg(name, curelm.id)}
                 >
-                  <img className="img-card-indvidual" src={curelm.url} />
+                  <img className="img-card-indvidual" alt="pic" src={curelm.url} />
                 </div>
               </div>
             );

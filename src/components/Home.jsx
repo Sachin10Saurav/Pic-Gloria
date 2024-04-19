@@ -11,7 +11,7 @@ const Home = ({ dataList }) => {
               <div className="col-12 col-sm-6 col-md-4 col-lg-3">
                 <Link className="links image-name-link" to={`/${cur.name}`}>
                   <div key={cur.id} className="img-card-div">
-                    <img className="img-card" src={cur.images[0].url} />
+                    <img className="img-card" alt="pic" src={cur.images[0].url} />
                     <p className="img-card-text">{cur.name}</p>
                   </div>
                 </Link>
